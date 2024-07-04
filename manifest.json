@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "twitch Streamers manager",
+  "description": "Alow you to list your streamers list in group",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "cw7xh8ss.bmp"
+  },
+  "permissions": ["scripting", "tabs", "activeTab", "storage", "webNavigation"],
+  "host_permissions": ["https://www.twitch.tv/*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["script/content.js"]
+    }
+  ]
+}

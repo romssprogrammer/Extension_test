@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module"  src="popup/popup.js" defer></script>
+
+    <link rel="stylesheet" href="popup/popup.css" />
+  </head>
+  <body>
+    <h1>Streamers suivis</h1>
+<div class="main_container">
+    <div class="container">
+      <h2 class="quick_acess_title">Acces rapide</h2>
+      <div class="streamer_links_container">
+        <ul class ="draggable-list" id="draggable-list" ></ul>
+      </div>
+    </div>
+    <div id="folders">
+      <h2>Categorie</h2>
+      <form id="new-folder-form">
+        <input type="text" id="new-folder-name" placeholder="Nouveau dossier" />
+        <button class="create_folder_btn" type="submit">Créer</button>
+        <input type="text" placeholder="Research" class="research_filter">
+      </form>
+      <ul id="folder-list"></ul>
+    </div>
+
+
+    </div>
+  </div>
+  </body>
+</html>
